@@ -1,0 +1,25 @@
+tr{
+  background-color: #ffffff;
+  height: 122px;
+  padding-left: 10px;
+  border-bottom: 1px solid #e7e8ec;
+}
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+tr:nth-child(even) {
+  background-color: #f2f4f8;
+}
+td{
+  padding-left: 50px;
+  font-weight: bold;
+}
+.alight-right{
+  padding-right: 40px;
+  text-align: right;
+}
+.light{
+  padding-left: 0px;
+  font-weight: normal;
+  color: #a5a7a9;
+}

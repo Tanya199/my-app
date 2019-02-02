@@ -1,50 +1,6 @@
-.AuthorsList-ul{
+.authors-list{
   max-width: 986px;
   width: 100%;
-  margin: 0px;
-  padding-left: 0px;
-  background-color: #ffffff;
-  list-style-type: none;
-}
-.AuthorList-li{
-  position: relative;
-  max-width: 986px;
-  padding: 0 20px;
-  border-bottom: 1px solid #e7e8ec;
-}
-.AuthorList-li:nth-child(2n){
-  background-color: #f2f4f8;
-}
-.li-display{
-  max-width: 986px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.display-align{
-  display: flex;
-}
-.Author-img{
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  margin: 10px 0 10px 0;
-  background-color: #00c5de;
-}
-.Author-name{
-  font-weight: bold;
-  margin-left: 10px;
-  line-height: 50px;
-}
-.Author-pagevies{
-  font-weight: bold;
-}
-.Author-count_pub{
-  position: absolute;
-  left: 90px;
-  bottom: 26px;
-  z-index: 10;
-  color: #a5a7a9;
-
+  background-color: #e7e8ec;
+  border-collapse: collapse;
 }
