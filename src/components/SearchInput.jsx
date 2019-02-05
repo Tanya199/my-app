@@ -1,5 +1,5 @@
 import React from 'react';
-import search from '../search.svg';
+import search from '../icon/search.svg';
 
 import './styles/SearchInput.css';
 

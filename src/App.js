@@ -16,6 +16,7 @@ class App extends Component {
     this.state = {
       data: sortData,
       term: '',
+      color: 'red',
     };
   }
 
@@ -24,7 +25,7 @@ class App extends Component {
   }
 
   render() {
-    const { term, data } = this.state;
+    const { term, data, color } = this.state;
 
     return (
       <div className="App">
@@ -36,6 +37,7 @@ class App extends Component {
         <AuthorsList  
             data={data}
             update={this.updateData}
+            style={color}
             />
       </div>
     );

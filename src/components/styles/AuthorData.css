@@ -2,7 +2,6 @@ tr{
   background-color: #ffffff;
   height: 122px;
   border-bottom: 1px solid #e7e8ec;
- 
 }
 tr:nth-child(odd) {
   background-color: #ffffff;
@@ -17,13 +16,21 @@ td{
   display: block;
   width: 60px;
   height: 60px;
+  margin-left: 20px; 
   border-radius: 50%;
+  box-shadow: 0px 0px 36px 1px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 0px 36px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 36px 1px rgba(0,0,0,0.5);
   background-color: #a5a7a9; 
-  margin-left: 10px; 
+  text-align: center;
+  line-height: 60px;
+  font-size: 25px;
+  color: #ffffff;
 }
 .alight-right{
   padding-right: 40px;
   text-align: right;
+  
 }
 .light{
   padding-left: 0px;
