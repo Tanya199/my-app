@@ -1,4 +1,4 @@
-# store-with-react
+# my-app
 
 ## Install
 
