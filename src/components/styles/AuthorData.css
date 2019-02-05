@@ -1,8 +1,8 @@
 tr{
   background-color: #ffffff;
   height: 122px;
-  padding-left: 10px;
   border-bottom: 1px solid #e7e8ec;
+ 
 }
 tr:nth-child(odd) {
   background-color: #ffffff;
@@ -11,8 +11,15 @@ tr:nth-child(even) {
   background-color: #f2f4f8;
 }
 td{
-  padding-left: 50px;
   font-weight: bold;
+}
+.circle{
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #a5a7a9; 
+  margin-left: 10px; 
 }
 .alight-right{
   padding-right: 40px;

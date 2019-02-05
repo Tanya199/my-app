@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import SearchWrapper from './components/SearchWrapper';
 import AuthorsList from './components/AuthorsList';
+import SearchInput from './components/SearchInput';
 import data from './data/data.json';
 
 import './App.css';
 
 const sortData = data.sort((a, b) => {
-    return b.count_pub - a.count_pub;
+    return b.pageviews - a.pageviews;
   });
+
 
 class App extends Component {
   constructor(props) {
@@ -15,15 +16,27 @@ class App extends Component {
     this.state = {
       data: sortData,
       term: '',
-    }
+    };
+  }
+
+  updateData = (config) => {
+    this.setState(config);
   }
 
   render() {
-    console.log(sortData);
+    const { term, data } = this.state;
+
     return (
       <div className="App">
-        <SearchWrapper />
-        <AuthorsList data={this.state.data}/>
+        <SearchInput 
+           term={term} 
+           data={sortData}
+           update={this.updateData}
+            />
+        <AuthorsList  
+            data={data}
+            update={this.updateData}
+            />
       </div>
     );
   }

@@ -1,6 +1,13 @@
 .authors-list{
   max-width: 986px;
   width: 100%;
+  margin-bottom: 28px;
   background-color: #e7e8ec;
   border-collapse: collapse;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
 }
