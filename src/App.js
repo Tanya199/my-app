@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AuthorsList from './components/AuthorsList';
+
 import SearchInput from './components/SearchInput';
 import data from './data/data.json';
 
@@ -16,16 +17,15 @@ class App extends Component {
     this.state = {
       data: sortData,
       term: '',
-      color: 'red',
     };
   }
 
   updateData = (config) => {
     this.setState(config);
-  }
+  };
 
   render() {
-    const { term, data, color } = this.state;
+    const { data, term } = this.state;
 
     return (
       <div className="App">
@@ -37,9 +37,8 @@ class App extends Component {
         <AuthorsList  
             data={data}
             update={this.updateData}
-            style={color}
             />
-      </div>
+        </div>
     );
   }
 }

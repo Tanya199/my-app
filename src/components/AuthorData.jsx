@@ -1,9 +1,8 @@
 import React from 'react';
-import first from '../icon/first.svg';
 
 import './styles/AuthorData.css';
 
-const AuthorData = ({ author, index }) => {
+const AuthorData = ({ author }) => {
 
   const firstLetter = author.name.split('')[0];
 
@@ -22,14 +21,13 @@ const AuthorData = ({ author, index }) => {
         <span
           className="circle"
           style={{backgroundColor: getRandomColor()}}
-
-        >{firstLetter}
+        >
+        {firstLetter}
         </span>
       </td>
       <td>{author.name}
         <td className="light">{author.count_pub} публ.</td>
       </td>
-      <td><img src={first} alt="" style={{width: 50, height: 50}}/></td>
       <td className="alight-right">{author.pageviews}</td>
     </tr>
   );
