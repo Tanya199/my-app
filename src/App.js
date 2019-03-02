@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AuthorsList from './components/AuthorsList';
-
+import Toolbar from './components/Toolbar';
 import SearchInput from './components/SearchInput';
 import data from './data/data.json';
 
@@ -10,13 +10,12 @@ const sortData = data.sort((a, b) => {
     return b.pageviews - a.pageviews;
   });
 
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       data: sortData,
-      term: '',
+      term: '', 
     };
   }
 
@@ -33,11 +32,16 @@ class App extends Component {
            term={term} 
            data={sortData}
            update={this.updateData}
-            />
+        />
+        <Toolbar 
+            initialData={sortData}
+            data={this.state.data}
+            update={this.updateData}
+        />
         <AuthorsList  
             data={data}
             update={this.updateData}
-            />
+        />
         </div>
     );
   }
