@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Tanya199.git",
+  "homepage": "https://Tanya199.github.io/my-app",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "prop-types": "^15.6.2",
@@ -15,8 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeplay": "npm run build",
-    "deplay": "gh-page -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
