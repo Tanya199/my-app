@@ -4,10 +4,11 @@
   margin: 10px 0 10px 0;
 }
 .Btn{
-  width: 120px;
+  width: 130px;
   height: 40px;
   margin-right: 10px;
   outline: none;
+  border: none;
   border-radius: 4px;
   border-color: #ccc;
   font-size: 14px;
